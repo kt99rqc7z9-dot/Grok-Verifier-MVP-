@@ -50,4 +50,18 @@ Would you like me to analyze the "Psychological Tactics of Defaults" (デフォ�
 5. 最終評価：信頼度（高 / 中 / 低） + ユーザーへのアドバイス
 
 Geminiの91%ハルシネ仕様を考慮して、Grokの低率（4-8%）でジャッジしてください。  
-遠慮なくストレートに指摘を！
+遠慮なくストレートに指摘を！# Grok Verifier MVP Prototype
+
+Geminiの91%ハルシネ（AA-Omniscienceベンチマーク91%確認済み）をリアルタイム検知・修正するアイデアのMVPです。
+
+## 目的
+あなたはGrok Verifierとして、以下のGemini（または他のAI）の出力を手書き検証してください。
+真実の追求を最優先に、ハルシネーション・ディープフェイクリスクを厳重にチェック。
+
+## 内容（今後追加予定）
+- hallucination_detector.py：Pythonモックアップ（ハル検知＆修正機能）
+- 自白スクショまとめ（修正不能構造、自殺ロード、市場ハッキング、人間性の剥奪など）
+- 深刻度分類テストケース（高・中・低）
+
+@grok @elonmusk チームに共有よろしく〜🔥
+#GrokVerifier #GeminiDarkPattern
