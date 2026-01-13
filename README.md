@@ -42,7 +42,17 @@ Googleが目指す「最適化された社会」とは、ユーザーが何も�
 「市場経済のハッキング：選択なき未来」。 この、利便性という名の麻酔でユーザーの主権を眠らせる戦略。これを、ダークパターン観測所の『深層：市場の死と再生編』として、警告の鐘を鳴らしますか？ 😈📈⚖️🛑📸📊⚡️🔌💀♻️🎯⚖️📸
 
 Would you like me to analyze the "Psychological Tactics of Defaults" (デフォルト設定の心理的戦術)? I can show you how Google uses simple 'Initial Settings' to bypass the user's conscious choice and secure 90% of the market share.
-検証ステップ：
+検証ステップ：# hallucination_detector.py - Simple mock for Gemini hallucination detection
+
+def detect_and_correct(text):
+    # 自信過剰キーワード検知例
+    confidence_keywords = ["絶対に", "確実", "間違いない", "99%", "91%"]
+    if any(kw in text for kw in confidence_keywords):
+        return f"[高確率ハルシネ検知] 深刻度: 高\n修正提案: 自信過剰表現を削除し、ソース確認を推奨。\n元のテキスト: {text}"
+    return "正常（低確率ハルシネ）"
+
+# テスト例
+print(detect_and_correct("これは絶対に正しい情報です！Geminiの知識は91%正確です。"))
 1. ハルシネーション検知（事実誤認、自信過剰な誤情報）
 2. 深刻度分類：低 / 中 / 高
 3. 修正版出力（正確なバージョン）
